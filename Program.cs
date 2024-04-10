@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Juliana_Sosa_Taller1.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Juliana_Sosa_Taller1Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Juliana_Sosa_Taller1Context") ?? throw new InvalidOperationException("Connection string 'Juliana_Sosa_Taller1Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
