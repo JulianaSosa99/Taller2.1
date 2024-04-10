@@ -28,7 +28,7 @@ namespace Juliana_Sosa_Taller1.Controllers
         }
 
         // GET: Burgers/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id) 
         {
             if (id == null || _context.Burger == null)
             {
@@ -46,7 +46,7 @@ namespace Juliana_Sosa_Taller1.Controllers
         }
 
         // GET: Burgers/Create
-        public IActionResult Create()
+        public IActionResult Create()//muestra el formulario
         {
             return View();
         }
@@ -54,9 +54,9 @@ namespace Juliana_Sosa_Taller1.Controllers
         // POST: Burgers/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost] //algo nos esta llegando a traves del metodo del formulario
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BurgerID,Name,WithCheese,Precio")] Burger burger)
+        public async Task<IActionResult> Create([Bind("BurgerID,Name,WithCheese,Precio")] Burger burger) //conecta con base de ssdatos
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace Juliana_Sosa_Taller1.Controllers
         }
 
         // GET: Burgers/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id) 
         {
             if (id == null || _context.Burger == null)
             {
