@@ -9,7 +9,7 @@ using Juliana_Sosa_Taller1.Data;
 using Juliana_Sosa_Taller1.Models;
 
 namespace Juliana_Sosa_Taller1.Controllers
-{
+{ //creacion controller
     public class BurgersController : Controller
     {
         private readonly Juliana_Sosa_Taller1Context _context;
