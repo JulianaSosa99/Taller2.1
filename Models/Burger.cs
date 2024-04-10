@@ -11,7 +11,7 @@ namespace Juliana_Sosa_Taller1.Models
         public bool WithCheese {  get; set; }
         [Range(0.01, 9999.9)] //el rango del siguiente atributo
         public decimal Precio { get; set; }
-        //hola
+        //hola es una clase nueva
 
     }
 }
