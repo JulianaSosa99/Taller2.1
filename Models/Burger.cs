@@ -12,6 +12,7 @@ namespace Juliana_Sosa_Taller1.Models
         [Range(0.01, 9999.9)] //el rango del siguiente atributo
         public decimal Precio { get; set; }
         //hola es una clase nueva
+        public List<Promo> Promo { get; set; }
 
     }
 }

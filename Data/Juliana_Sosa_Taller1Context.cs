@@ -15,5 +15,6 @@ namespace Juliana_Sosa_Taller1.Data
         }
 
         public DbSet<Juliana_Sosa_Taller1.Models.Burger> Burger { get; set; } = default!;
+        public DbSet<Juliana_Sosa_Taller1.Models.Promo> Promo { get; set; } = default!;
     }
 }
